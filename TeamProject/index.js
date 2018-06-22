@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('#mobile_hidden_list').hide();
 
 	$('#mobile_menu_icon').on('click', function(){
-    	$('#mobile_hidden_list').toggle();
+    	$('#mobile_hidden_list').slideToggle("fast");
     	return false;
     });
 
