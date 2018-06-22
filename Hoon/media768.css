@@ -1,0 +1,212 @@
+*{padding: 0; margin: 0;}
+
+#page{
+	padding: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: #00FF00;*/
+	height: 100%;
+	width: 100%;  /*수정*/
+}
+#movie{
+	height: 240px;
+}
+#poster{
+	float: left;
+	/*margin-top: 12px;*/
+	margin: 30px 20px 20px 30px;
+	width: 120px;
+	height: 170px;
+}
+#poster2_ul li{
+	list-style: none;
+	padding-bottom: 4px;
+	font-size: 10px;
+}
+#star{width: 80px;}
+
+#strong01{margin-left: 12px;}
+		
+hr{
+	color: #AAAAAA;
+	margin-top: 12px;
+	clear: both;
+}
+
+#poster2{ 
+	padding-top: 30px;
+	margin-left: 160px;
+}
+
+a{
+	text-decoration: none;
+}
+#content01 h2{
+	margin-top: 36px;
+	color: #8C8C8C;
+}
+#content01 p{
+	line-height: 150%;
+	margin-top: 8px;
+	font-size: 0.8em;
+}
+
+#content01{
+	line-height: 30px;
+    color: #989898;
+    font-size: 0.9em;
+	font-family: AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+}
+#content02{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content03{
+	line-height: 27px;
+	font-size: 14px;
+	font-family: AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+
+}
+#content03 p{margin-bottom: 4px; font-size: 1.0em;}
+#content03 strong{
+	font-size: 1.0em;
+}
+
+#content03 div a{color: #fff; }
+#content03 div table tr td{
+	padding-right: 20px;
+}
+#content03 div table tr td strong{
+	color: black;
+	
+}
+#content03 div table tr td img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 100%;
+	
+}
+#content03 h3{
+	font-size: 0.9em;
+}
+#content04 h3{
+	color: #323232;
+	font-size: 0.9em;
+}
+
+.div a{
+	text-decoration: none;
+	color: #4374D9;
+}
+.div div{
+	border-bottom: 2px solid #EEEEEE; 
+	width: 50%;
+	height: 150px;
+	position: relative;
+	float: left;
+}
+#one2{
+	border-top: 2px solid #EEEEEE;
+}
+
+.div div img{
+	margin: 15px 0px 0px 0px;
+	height: 120px;
+	width: 90px;
+
+}
+.div div p {
+    font-size: 0.8em;
+    left: 115px;
+    bottom: 110px;
+    display: inline;
+    position: absolute;
+	
+}
+.div #stp{
+
+	bottom: 25px;
+	color: #989898;;
+
+}
+
+.sliderkit .txt_related{
+
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    z-index: 10;
+    width: 130px;
+    margin-left: -65px;
+    font-weight: normal;
+    font-size: 1.0em;
+    color: #fff;
+    text-align: center;
+}
+.sliderkit .txt{
+     position: absolute;
+    top: 300px;
+    left: 50%;
+    z-index: 10;
+    width: 130px;
+    margin-left: -65px;
+    font-weight: normal;
+    font-size: 1.0em;
+    color: #fff;
+    text-align: center;
+}
+.sliderkit .textA{
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    z-index: 10;
+    width: 130px;
+    margin-left: -55px;
+    font-weight: normal;
+    font-size: 1.0em;
+    color: #fff;
+    text-align: center;
+}
+.sliderkit .txt2{
+     position: absolute;
+    top: 200px;
+    left: 50%;
+    z-index: 10;
+    width: 130px;
+    margin-left: -65px;
+    font-weight: normal;
+    font-size: 1.0em;
+    color: #fff;
+    text-align: center;
+}
+.sliderkit a .poto{
+
+	width: 100%;
+	height: 100%;
+}
+.photoslider-mini .sliderkit-panel{
+	width: 100%;
+	height: 100%;
+}
+
+.sliderkit-panels{
+	width: 100%;
+	height: 100%;
+}
+
+.photoslider-mini{width:100%;} 
+
+/* Panels buttons */
+/*좌우 클릭버튼 사이즈인듯함.*/
+.photoslider-mini .sliderkit-go-btn{position:absolute;top:0;z-index:10;width:50px;height:100%;}
+.photoslider-mini .sliderkit-go-prev{left:0;}
+.photoslider-mini .sliderkit-go-next{right:0;}
+/*좌우 클릭버튼 사이즈*/
+.photoslider-mini .sliderkit-go-btn a{display:block;width:50px;height:100%;opacity:0.6;cursor:pointer;background-color:#fff;background-repeat:no-repeat;background-position:center center;}
+.photoslider-mini .sliderkit-go-prev a{background-image:url("Images/slider-arrow-left.png");}
+.photoslider-mini .sliderkit-go-next a{background-image:url("Images/slider-arrow-right.png");}
+.photoslider-mini .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
+.photoslider-mini .sliderkit-btn-disable a:hover{cursor:default;}
+.photoslider-mini .sliderkit-go-btn span{display:none;}

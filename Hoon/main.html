@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<title>독전 상세페이지</title>
+
+	<script type="text/javascript" src="lib/main.js"></script>
+
+	<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<!-- Slider Kit scripts -->
+	<script type="text/javascript" src="lib/jquery.sliderkit.1.9.2.pack.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".photoslider-mini").sliderkit({
+				auto:false,
+				autospeed:3000,
+				panelbtnshover:true,
+				circular:true,
+				fastchange:false
+			});
+
+			window.onresize = resizeEvent;
+			resizeEvent();
+		});
+
+		var resizeEvent = function() {
+			if ($(this).width() <= 768) {
+				$("#content03 div#mobile").css("display", "initial");
+				$("#content03 div#desktop").css("display", "none");
+			}
+			else {
+
+				$("#content03 div#mobile").css("display", "none");
+				$("#content03 div#desktop").css("display","initial");
+			}
+		};
+
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="sliderkit-core.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="sliderkit-demos.css" media="screen, projection" />
+
+	
+	<link rel="stylesheet" type="text/css" href="main.css" media="(min-width:1200px)">	<!-- 최소 1200px 이상일때 (웹)-->
+	<link rel="stylesheet" type="text/css" href="media1200.css" media="(min-width:768px) and (max-width:1200px)"> <!-- 최소 768px 이상일때 (테블릿)-->
+
+	<link rel="stylesheet" type="text/css" href="media768.css" media="(max-width:768px)"> <!--768px 미만일때 (모바일)-->
+
+	<style type="text/css">
+	#wrapper{width:100%;margin: 50px auto};   
+</style>
+
+</head>
+<body>
+
+	<header id="header_01"></header>
+
+	<div id="page">
+
+		<article>
+			<section>
+				<iframe id="movie" title="<독전> 메인 예고편" width="100%" height="360"src="https://kakaotv.daum.net/embed/player/cliplink/385500109?service=daum_movie" allowfullscreen frameborder="0" scrolling="no"></iframe>
+			</section>
+
+			<section>
+				<img src="Images/Action/06_dog.jpg" id="poster">
+			</section>
+
+			<section id="poster2">
+				<ul id="poster2_ul">
+					<li>독전 (2018)</li>
+					<li>Believer</li>
+					<li><a href="#"><img src="Images/star.png" id="star"></a><strong id="strong01">7.0</strong>/10</li>
+					<li>범죄/액션 | 한국</li>
+					<li>2018.05.22 개봉 | 123분, 15세이상관람가</li>
+					<li>(감독)<a href="http://movie.daum.net/person/main?personId=34811"> 이해영</a></li>
+					<li>(주연)
+						<a href="http://movie.daum.net/person/main?personId=98334">조진웅</a>
+						<a href="http://movie.daum.net/person/main?personId=405308">류준열</a>
+						<a href="http://movie.daum.net/person/main?personId=6285">김성령</a>
+						<a href="http://movie.daum.net/person/main?personId=303844">박해준</a>
+					</li>
+					<li><h3>누적관객 4,678,463명</h3></li>
+				</ul>
+				<hr>
+				
+
+			</section>
+
+			<section id="content01">
+				<p>
+					<b>아시아 최대 마약 조직, 실체 없는 적을 추적하라!</b><br>
+					<br>
+					의문의 폭발 사고 후,<br>
+					오랫동안 마약 조직을 추적해온 형사 ‘원호’(조진웅)의 앞에 조직의 후견인 ‘오연옥’(김성령)과 버림받은 조직원 ‘락’(류준열)이 나타난다. 그들의 도움으로 아시아 마약 시장의 거물 ‘진하림’(김주혁)과 조직의 숨겨진 인물 ‘브라이언’(차승원)을 만나게 되면서 그 실체에 대한 결정적 단서를 잡게 되는데…<br>
+					<a id="myDIV_Btn" href="javascript:doDisplay();">더보기</a><br>
+					<div id="myDIV" style="display: none">
+
+						<b>끝까지 의심하라!<br>
+						5월 24일, 독한 자들의 전쟁이 시작된다!</b><br>
+					</p>
+					<p class="desc_movie desc_more">
+						<b>[ ABOUT MOVIE ]<br>
+							<br>
+							독한 캐릭터들의 폭발적인 존재감! <br>
+						탄탄한 시나리오에 뿌리를 둔 웰메이드 범죄극의 탄생!</b><br>
+						5월 22일 개봉을 확정한 &lt;독전&gt;은 아시아를 지배하는 유령 마약 조직의 실체를 두고 펼쳐지는 독한 자들의 전쟁을 그린 범죄극이다. 다양한 장르에서 자신만의 매력적인 스타일을 구축해온 이해영 감독과 &lt;친절한 금자씨&gt;, &lt;박쥐&gt;, &lt;아가씨&gt;의 각본을 맡았던 정서경 작가가 협업한 &lt;독전&gt;의 시나리오는 제작 단계부터 충무로 최고의 시나리오라고 입소문이 났을 만큼 탄탄한 각본을 바탕으로 하고 있어 더욱 기대를 모으고 있다. <br>
+						<br>
+						&lt;독전&gt;은 하나의 타깃을 쫓는 긴장감 넘치는 스토리 안에서 ‘원호’(조진웅)를 중심으로 하나 둘씩 점차 정체를 드러내는 인물들의 다채로운 캐릭터 연기가 돋보이는 작품이다. 정희순 제작 프로듀서는 “캐릭터들이 어떤 상대의 캐릭터를 만나는지에 따라서 다양한 색깔을 보여준다. 주연부터 조연까지, 한 캐릭터가 한 얼굴을 가지고 있는 것이 아니기 때문에 보는 내내 재미있는 볼거리가 될 것이다”라고 전해 ‘원호’의 끈질긴 추적이 이어짐에 따라 버림받은 마약조직원 ‘락’(류준열)을 비롯해 김성령, 박해준 그리고 차승원, 故 김주혁이 선보이는 폭발적인 인생 연기로 탄생한 캐릭터들의 강렬한 경합이 선사할 재미를 기대케 한다. 이에 류준열은 “인물들이 어떤 선택을 하고 어떻게 일이 진행되어 가는지를 따라가다 보면 엄청난 결과를 만날 수 있다”라고 말하며 캐릭터 무비만의 색다른 매력이 담긴 &lt;독전&gt;에 대한 관객들의 호기심을 높이고 있다. <br>
+						<br>
+						한편, 이해영 감독은 “속도감 있게 전개되는 이야기들 사이에서 논리들이 어긋나지 않게 신경 썼다”라며 &lt;독전&gt;이 단순한 재미를 넘어선 숨 막히는 사건들로 긴장감을 잡고 가는 완성도 높은 작품임을 강조했다. 조진웅 또한 “단순히 악을 선별한다는 의미보다, 맹목적인 목적이 우리 삶에서 어떤 작용을 하는지 그것이 옳은 것인지 생각해볼 수 있는 작품이다. 아주 독특한 영화인 것 같다”라고 밝히며 탄탄하고 깊이감 있는 웰메이드 범죄극임을 강조하고 있다. 이처럼, 쉴 틈 없이 전개되는 탄탄한 스토리와 강렬한 캐릭터들의 경합으로 스크린을 가득 채울 &lt;독전&gt;은 모든 면에서 진보된 2018년 최고의 범죄극 탄생을 예고하고 있다. <br>
+						<br>
+						<br>
+						<b>범죄극 사상 가장 강렬한 비주얼버스터 탄생! <br>
+							&lt;옥자&gt;&lt;사도&gt;&lt;하녀&gt;&lt;도둑들&gt; 그리고 &lt;독전&gt;<br>
+						독보적 스타일의 이해영 감독과 대한민국 최고의 제작진의 만남</b><br>
+						영화 &lt;독전&gt;을 더욱 기대케 하는 건 다양한 장르의 작품으로 자신만의 독특한 스타일을 창조해온 이해영 감독과 대한민국 최고의 제작진이 한자리에 모였기 때문이다. 모든 과정이 새로운 시도의 연속이었다고 밝힌 정희순 제작 프로듀서는 “누구보다 경험이 많고, 일상적인 공간들도 새롭게 접근하는 제작진의 의기투합이 좋았다”라며 &lt;독전&gt;에 대한 궁금증을 높였다. <br>
+
+						&lt;독전&gt;의 제작진은 다양한 공간의 미술과 촬영, 조명, 그리고 배우들의 의상까지 심혈을 기울이며 밸런스를 유지, &lt;독전&gt;만의 스타일을 완성시켰다. 먼저, 청룡영화상 미술상을 수상하며, &lt;하녀&gt;와 &lt;해무&gt; 그리고 한국과 미국을 넘나든 &lt;옥자&gt;의 공간을 완성시킨 이하준 미술감독은 “유사한 장르의 영화들은 설정이나 느낌이 비슷할 수 있는데, &lt;독전&gt;은 전혀 달랐다”라고 전하며 일상의 공간들을 영화 속 공간에 색다르게 구현해냈다. 또한, “형사의 공간으로 채워진 ‘원호’의 경찰서, 자유로운 느낌의 넓고 광활한 ‘락’의 소금공장 등 각 캐릭터를 대표할 수 있는 세트를 만들었다”며 영화 속에 등장하는 다양한 공간의 비주얼을 더욱 기대케 한다. <br>
+						<br>
+						여기에 &lt;은교&gt;, &lt;사도&gt;를 통해 청룡영화상 촬영상과 조명상을 수상하며 호흡을 맞춘 김태경 촬영 감독, 홍승철 조명 감독이 합류, 디테일과 캐릭터의 감정을 고스란히 담아내는 카메라 앵글과 조명 설계로 스타일리시한 비주얼을 완성했다. 또한, 의상 감독으로는 &lt;옥자&gt;, &lt;해무&gt;, &lt;도둑들&gt; 등을 담당한 최세연 의상 감독이 함께 했으며, 그녀는 “배우 본연의 장점을 최대한 살리면서도 정확히 그 캐릭터에 이입될 수 있도록 많은 시도를 했다”라고 전해 디테일을 살린 영화의 또 다른 볼거리를 기대케 한다. <br>
+						<br>
+						이처럼 미술, 촬영, 조명, 의상 등 각 분야 최고 제작진들의 뜨거운 열정과 수많은 노력으로 탄생된 영화 &lt;독전&gt;은 스토리와 캐릭터뿐만 아니라 스타일까지 완벽히 결합되어 여타 다른 범죄극과는 차별화된 ‘비주얼버스터’다운 독보적 볼거리를 선보일 것이다. <br>
+						<br>
+						<br>
+						<b>조진웅, 류준열, 김성령, 박해준<br>
+							그리고 차승원, 故 김주혁의 강렬한 만남! <br>
+						대한민국을 뒤흔들 완벽한 열연을 선보인다! </b><br>
+						2018년 최고의 화제작 &lt;독전&gt;을 기대할 수밖에 없는 이유 중 하나는 바로 충무로 명배우들의 역대급 만남일 것이다. 조진웅, 류준열, 김성령, 박해준 그리고 차승원, 故 김주혁까지 내로라하는 연기파 배우들이 조우해 각기 다른 각 캐릭터만의 아우라와 폭발적인 열연에서 오는 강렬한 시너지를 선보일 예정이다. <br>
+						<br>
+						먼저, 다양한 장르를 통해 섬세하고 탄탄한 연기력을 인정받으며 충무로 대표 연기파 계보를 이어가고 있는 조진웅이 형사 ‘원호’ 역을 맡았다. 그는 실체 없는 조직을 잡기 위해 선과 악의 경계를 넘나드는 등 자신의 모든 것을 건 형사 ‘원호’로 분해 한층 성숙해진 연기를 보여줄 예정이다. 이해영 감독은 “조진웅 배우의 뜨거운 에너지가 ‘원호’와 일맥상통하는 부분이 있다고 판단했다. 또 ‘원호’가 맹목적이지만 한편으론 인간적인 면모도 가진 캐릭터인데 그런 부분들을 살려줄 수 있을 것이라고 생각했고, 올바른 선택이었던 것 같다”라고 밝혀, 이번 작품을 통해 조진웅이 보여줄 새로운 모습을 기대케 한다. 여기에 충무로의 대세 배우로 자리매김한 류준열이 조직으로부터 버림받은 연락책 ‘락’으로 전무후무한 인생 연기를 선보인다. 속내를 알 수 없는 인물인 ‘락’ 역의 류준열은 “무표정하지만 내면에 소용돌이치고 있는 감정은 무엇일까 하는 부분을 고민하며 연기에 임했다”라고 전하며, 절제되었지만 그 내면에는 다양한 감정을 가진 인물 ‘락’을 표현하기 위해 들인 노력을 엿볼 수 있게 했다. <br>
+						<br>
+						한편, 김성령은 가까스로 죽음을 피한 마약조직의 후견인 ‘오연옥’을 연기한다. ‘오연옥’은 ‘원호’에게 조직의 실체에 대한 정보를 흘리는 인물로, 첫 등장부터 남다른 존재감으로 영화의 몰입도를 한층 높여줄 것이다. 마약조직의 임원 ‘선창’ 역은 스크린과 브라운관을 넘나들며 배우로서의 인지도를 넓혀온 박해준이 맡았다. 그는 이번 &lt;독전&gt;을 통해 강한 자 앞에서 약하고, 약한 자 앞에서 강한 악랄한 캐릭터로 열연을 펼치며 관객들에게 깊은 인상을 남길 예정이다. 마약조직의 숨겨진 인물 ‘브라이언’ 역의 차승원은 힘의 이완을 자유롭게 조절하는 연기를 선보이며 극의 긴장감을 고조시킬 것으로 기대를 모은다. 마지막으로 매 작품마다 명품 연기로 호평을 받아온 故 김주혁이 아시아 최대 마약 시장의 거물 ‘진하림’으로 합류, 광기의 카리스마가 돋보이는 역대급 캐릭터의 매력을 십분 살려내며 영화를 더욱 풍성하게 만들 것이다. 이처럼 최적의 역할을 연기한 대체불가 배우들의 만남은 작품의 완성도를 한껏 끌어올리며 완벽한 시너지를 발휘, 오는 5월 22일 관객들의 마음을 단번에 사로잡을 것이다. <br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<b>[ PRODUCTION NOTE ] <br>
+							<br>
+							과감한 의상부터 파격적 헤어까지<br>
+						독보적인 캐릭터 스타일 탄생!</b><br>
+						강렬한 캐릭터들의 팽팽한 대결이 중요한 작품인 만큼 이해영 감독은 개성이 뚜렷한 인물들을 탄생시키기 위해 의상부터 헤어까지 모든 것에 고유의 스타일을 담아내고자 했다. &lt;옥자&gt;, &lt;도둑들&gt; 등을 담당했던 최세연 의상 감독은 “캐릭터들이 모두 강렬한 매력을 지니고 있어, 이를 제대로 표현하기 위해 80% 이상의 의상을 제작했다”며 범죄극 사상 최고의 ‘비주얼버스터’다운 노력으로 탄생된 &lt;독전&gt;에 대한 기대감을 높이고 있다. <br>
+						<br>
+						각자가 처한 상황을 반영한 의상들은 시나리오 속 캐릭터를 실제 존재하는 인물로 완벽하게 탄생시켰다. 먼저, 영화 속에서 가장 현실적인 인물임을 환기시켜줘야 하는 ‘원호’(조진웅)는 실제 형사들이 입는 옷들을 최대한 고려했으며, 감정을 드러내지 않는 ‘락’(류준열)은 몸에 딱 맞춰진 검정색 수트로 성격은 물론 이선생 조직을 소탕하는데 중요한 역할을 하는 인물임을 보여주고자 했다. 또한, 강렬한 인상을 남겨야 할 ‘오연옥’(김성령)은 색감과 패턴의 배치를 수없이 고민한 끝에 빨간 자켓과 꽃무늬 바지를 선택해 첫 등장만으로 시선을 사로잡게 했다. ‘선창’(박해준)은 하와이안 셔츠같이 루즈하고 편해 보이는 옷들을 선택해 타 범죄극에서는 볼 수 없는 악인 캐릭터를 만들어냈다. <br>
+						<br>
+						뿐만 아니라 배우들의 헤어 스타일링은 캐릭터의 완성도를 높이는 중요한 수단 중 하나였다. 촬영 당시 차승원의 긴 머리를 고집한 이해영 감독은 일명 ‘소녀 머리’를 탄생시켜, 속을 알 수 없고 어떤 식으로 반응할지 예측하기 힘든 ‘브라이언’의 이미지를 확실히 보여주었다. 한편, 그만의 젠틀함으로 대중들의 사랑을 받은 故 김주혁은 예민하고 외부노출을 꺼리는 성격의 ‘하림’을 표현하기 위해 머리가 불타오르고 있는 듯한 일명 ‘아인슈타인 머리’를 완성시켰다. 이렇게 탄생된 매력 넘치는 캐릭터들의 연기가 돋보이는 &lt;독전&gt;은 이제껏 본 적 없는 스타일의 웰메이드 범죄극의 탄생을 알린다. <br>
+						<br>
+						<br>
+						<b>현실감각과 영화감각의 접점! <br>
+						&lt;독전&gt;만의 차별화된 공간 활용법!</b><br>
+						공간이 주는 힘을 중요하게 생각하는 이해영 감독은 피부에 와닿는 지극히 일상적인 장소들을 통해 작품의 리얼리티를 높이고자 했다. 특히, “현실적인 공간에서 문을 열고 들어갔는데 영화적인 공간을 만날 수 있는 것은 &lt;독전&gt;의 큰 재미 중 하나가 될 것이다”라는 말처럼 현실적인 공간에 영화적 상황이 녹아 들어 탄생된 &lt;독전&gt;의 모든 장면들은 중요한 관람 포인트가 될 것이다. <br>
+						<br>
+						<b>#도심 속 마약 제조공간 - 용산역 </b><br>
+						대한민국 국민이라면 흔히 알고 있는 장소가 마약 유통의 본거지가 될 수 있다는 설정을 생각한 이해영 감독은 수많은 사람들이 매일 이용하는 용산역을 선택했다. 너무나 일상적이라 미처 상상하지 못했던 장소를 적극 활용하면서, 용산역 내부에 숨겨진 공간들을 영화적 리얼리티로 재탄생시켰다. 또한, 아시아 최대규모 조직의 공간답게 도시적이고 현대적이지만 공장화되어 있어 마치 공장의 한 부품처럼 일하고 있는 사람들의 모습은 공간의 특징까지 녹여내 영화의 완성도를 더욱 높이고 있다. <br>
+						<br>
+						<b>#농아남매의 마약 제조실 – 소금공장</b><br>
+						소금공장은 농아남매의 정서와 마약이 상징하는 이미지가 공존하는 공간이어야 했다. 뿐만 아니라 많은 사건들이 벌어지는 곳인 만큼 중요했기 때문에 이하준 미술감독은 “국내에 있는 염전은 거의 다 본 것 같다”라며 심사숙고 끝에 선택된 농아남매의 소금공장이 어떤 곳일지 관객들의 궁금증을 높인다. 또한, 허름한 시설로 좋지 않은 환경에서 서로의 사연을 끌어안은 채 일하고 있는 농아남매의 정서가 담긴 공간인 만큼 용산역 마약 제조실과는 180도 다른 특징이 담겨 색다른 볼거리를 선사할 것이다. 여기에 넓은 평야와 바다를 끼고 있는 염전 한가운데 위치한 이곳은 보는 것만으로 탁 트인 시원함을 선사해, 관객들에게 더욱 인상적인 공간으로 남을 것이다. <br>
+						<br>
+						<b>#이선생 조직을 쫓는 원호의 소속 - 서울지방 경찰청</b><br>
+						영화 속 가장 현실적인 공간인 경찰청은 이선생 조직을 쫓는 형사 ‘원호’(조진웅)의 집요한 수사와 팀원들의 치밀한 작전이 계획되는 중요한 공간이다. 또한, ‘락’(류준열)과 ‘오연옥’(김성령)이 조직과 관련된 중요한 실마리를 제공해 또 다른 시작을 알리는 공간인 만큼 이하준 미술감독은 단순하고 명료하지만 리얼함을 최대한 구현하기 위해 노력했다. 특히, 그레이 톤의 색감을 쓰면서 &lt;독전&gt; 전체 색감 틀 안에 현실적인 공간을 녹여두려 한 의도는 ‘비주얼버스터’ 다운 디테일을 알 수 있어 영화에 대한 기대를 증폭시킨다. <br>
+						<br>
+						<b>#하림의 거래 &amp; 원호의 작전 – 호텔</b><br>
+						&lt;독전&gt; 속 호텔은 이선생과의 거래를 준비하는 ‘하림’(김주혁)의 공간이자 ‘하림’으로 위장해 이선생 조직을 소탕하려는 ‘원호’와 ‘락’이 이중작전을 펼치는 중요한 공간이다. 이해영 감독은 서로가 속고 속이는 상황이 펼쳐지는 두 개의 호텔방이 데칼코마니처럼 대칭의 구도로 이루어질 수 있도록 디테일한 설정들을 두었다. 조명 같은 경우, 위장 연기를 해야 하는 ‘원호’에게는 악인의 느낌을 주는 텅스텐 조명을 배치, ‘하림’에게는 정서적으로 따뜻해 보이는 옐로우가 높은 조명을 선택해 반전의 재미를 녹여냈다. 또한, ‘하림’의 동그란 형태의 테이블은 어떠한 인물들과도 동등한 거리를 두도록 설계했으며, ‘원호’의 직사각형 형태의 테이블로는 경계대상 ‘선창’(박해준)을 가장 멀리 두는 등 인물 사이 거리감과 긴장감을 반영한 디테일한 소품설계로 드라마틱한 전개에 방점을 찍으며 몰입을 높였다. <br>
+						<br>
+						<br>
+						<b>독창적인 리듬감으로 장르적 재미를 높였다! <br>
+						배우의 호흡과 액션을 최대치로 끌어올린 액션과 음악!</b><br>
+						비주얼버스터 &lt;독전&gt; 특유의 스타일은 시각적, 청각적으로 만들어낸 리듬감이 큰 몫을 차지한다. 복잡하게 얽힌 스토리와 제각기 다른 개성을 가진 캐릭터들은 시각화에 있어 다양한 가능성을 내재하고 있었고, 제작진은 장면과 공간 그리고 캐릭터의 특성을 고려하여 방향성을 찾으려 노력했다. <br>
+						<br>
+						&lt;뷰티 인사이드&gt;(2015), &lt;사도&gt;(2015) 등 다수의 작품에서 탄탄한 내공을 드러낸 김태경 촬영감독은 캐릭터의 특성이 잘 보이면서도, 이들의 강렬한 호흡을 관객들에게 직접적으로 전달할 방법을 찾는데 공을 들였다. 영화의 스토리를 이끄는 ‘원호’는 거칠고 움직임이 많으며 감정을 드러내는 인물로, ‘원호’가 등장하는 장면들은 카메라 워킹과 움직임을 크게 가져가는 무빙 샷을 설계해 액션감을 높였다. 반면, 감정을 내보이지 않는 ‘락’ 캐릭터는 정적인 카메라 앵글과 디테일한 조명 설계로 인물 간의 긴장감을 살리려 노력, 범죄극만의 장르적 재미를 더할 수 있었다. 이러한 두 캐릭터의 조우와 이들이 새로운 인물을 맞닥뜨리는 과정들은 또 다른 템포를 형성하며 극의 재미를 높인다. 액션 역시 캐릭터의 감정과 드라마에 중심을 두고 구성하여, 스타일리시한 미장센 그 이상을 보여줘 관객들의 감탄을 자아낼 것이다. <br>
+						<br>
+						밀도 있게 구성된 음악 또한 캐릭터 사이의 감정과 긴장을 효과적으로 보여주는 데 큰 역할을 차지한다. &lt;곡성&gt;(2016), &lt;좋은 놈, 나쁜 놈, 이상한 놈&gt;(2008), &lt;달콤한 인생&gt;(2005) 등의 작품에서 인상적인 음악을 선보인 달파란 음악감독의 손에서 탄생한 &lt;독전&gt;의 음악 역시 영화의 스타일에 크게 기여했다. 달파란 음악감독이 “심플하면서도 복잡한 설계를 하는 과정이었다”고 밝힌 &lt;독전&gt;의 음악은 클래식한 사운드와 현대적 사운드 디자인의 혼합으로 이루어졌으며, 강렬한 비트와 불협적 사운드의 활용이 영화가 가진 독창적 스타일을 더욱 돋보이게 만들며 영화의 완성도를 높였다. 또한 전반적으로 긴장의 완급을 조절하는 데 있어 음악의 강약 조절에 심혈을 기울이는 등 섬세한 작업 끝에 &lt;독전&gt;은 한층 완성도 있는 작품으로 거듭날 수 있었다. 이처럼 각고의 노력 끝에 완성된 &lt;독전&gt;은 차별화된 범죄극의 탄생을 알리며 관객들을 사로잡을 것이다. <br>
+					</p>
+				</div>
+
+			</section>
+
+			<section id="content02">
+				
+				<div id="wrapper">
+					<div class="sliderkit photoslider-mini">
+						<div class="sliderkit-panels">
+							<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a href="#" title="Previous"><span>Previous</span></a></div>
+							<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a href="#" title="Next"><span>Next</span></a></div>
+
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/01.jpg" alt="포토이미지1"/></a>
+								<p class="txt_related">포토(<em><span>1</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/02.jpg" alt="포토이미지2"/></a>
+								<p class="txt_related">포토(<em><span>2</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/03.jpg" alt="포토이미지3"/></a>
+								<p class="txt_related">포토(<em><span>3</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/04.jpg" alt="포토이미지4"/></a>
+								<p class="txt_related">포토(<em><span>4</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/05.jpg" alt="포토이미지5"/></a>
+								<p class="txt_related">포토(<em><span>5</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/06.jpg" alt="포토이미지6" /></a>
+								<p class="txt_related">포토(<em><span>6</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/07.jpg" alt="포토이미지7"/></a>
+								<p class="txt_related">포토(<em><span>7</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/08.jpg" alt="포토이미지8"/></a>
+								<p class="txt_related">포토(<em><span>8</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/09.jpg" alt="포토이미지9"/></a>
+								<p class="txt_related">포토(<em><span>9</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/10.jpg" alt="포토이미지10"/></a>
+								<p class="txt_related">포토(<em><span>10</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">독전</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=108633#1239755/PhotoList">모두보기 ></a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="content03">
+
+				<div id="mobile" class="wrapper">
+					<div class="sliderkit photoslider-mini">
+						<div class="sliderkit-panels">
+							<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a href="#" title="Previous"><span>Previous</span></a></div>
+							<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a href="#" title="Next"><span>Next</span></a></div>
+
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/magazine01.jpg" alt="포토이미지1"/></a>
+								<p class="txt_related">메거진(<em><span>1</span></em>/<span id="photoTotalSize">5</span>)</p>
+								<p class="txt2">[주연보다 강렬한 조연] '독전' 각본까지 수정하게 만든 쎈 여자! 이주영</p>
+								<a class="textA" href="http://v.movie.daum.net/v/on0tjHh6l6">기사 보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/독전이미지/magazine02.jpg" alt="포토이미지2"/></a>
+								<p class="txt_related">메거진(<em><span>2</span></em>/<span id="photoTotalSize">5</span>)</p>
+									<p class="txt2">[주연보다 강렬한 조연] '독전'의 약빤 누님 진서연의 파격 필모</p>
+									<a class="textA" href="http://v.movie.daum.net/v/olYVAsXdzZ">기사 보기 ></a>
+								</div>
+								<div class="sliderkit-panel">
+									<a href="#"><img class="poto" src="Images/독전이미지/magazine03.jpg" alt="포토이미지3"/></a>
+									<p class="txt_related">메거진(<em><span>3</span></em>/<span id="photoTotalSize">5</span>)</p>
+									<p class="txt2">[스타그램] '독전' 신스틸러! 괴물 연기력으로 충무로를 흔든 '진서연'</p>
+									<a class="textA" href="http://v.movie.daum.net/v/o9Yk1Op848">기사 보기 ></a>
+								</div>
+								<div class="sliderkit-panel">
+									<a href="#"><img class="poto" src="Images/독전이미지/magazine04.jpg" alt="포토이미지4"/></a>
+									<p class="txt_related">메거진(<em><span>4</span></em>/<span id="photoTotalSize">5</span>)</p>
+									<p class="txt2">[네티즌 리뷰] 화려함으로 중무장한 한국형 범죄 액션 '독전'</p>
+									<a class="textA" href="http://v.movie.daum.net/v/orODgkctQ0">기사 보기 ></a>
+								</div>
+								<div class="sliderkit-panel">
+									<a href="#"><img class="poto" src="Images/독전이미지/magazine05.jpg" alt="포토이미지5"/></a>
+									<p class="txt_related">메거진(<em><span>5</span></em>/<span id="photoTotalSize">5</span>)</p>
+									<p class="txt2">주말에 뭐볼까? 5월 22일, 24일 개봉작 별점 및 간단평 모음</p>
+									<a class="textA" href="http://v.movie.daum.net/v/oxjx1xhSx8">기사 보기 ></a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="desktop" class="wrapper">
+
+						<h3>매거진 (5)</h3><br>
+
+						<div id="one">
+							<a href="http://v.movie.daum.net/v/on0tjHh6l6">
+								<table>
+									<tr>
+										<td><img src="Images/독전이미지/magazine01.jpg" class="" alt="[주연보다 강렬한 조연] '독전' 각본까지 수정하게 만든 쎈 여자! 이주영" ></td>
+										<td><strong class="tit_join">[주연보다 강렬한 조연] '독전' 각본까지 수정하게 만든 쎈 여자! 이주영</strong><br><br>
+											<p class="txt_magazine">주연진과 조연진의 최상의 조합으로 연일 화제를 불러오고 있는 영화 &lt;독전&gt;. 보령으로 출연해 강인한 인상을 남긴 진서연에 이어 분장과 표정 연기만으로도 깊은 인상을 남긴 또 다른 조연진이 있었으니, 극 중 김동영과 함께 마약을 전문으로 제조하는 청각장애 남매로 분해 블랙 유머적 정서와 반전적인 재미를 전해준 그녀가 바로 오늘 칼럼의 주인공이다. 전도유망한</p></td>
+										</tr>
+									</table>	
+								</a>
+							</div>
+
+							<div>
+								<a href="http://v.movie.daum.net/v/olYVAsXdzZ">
+									<table>
+										<tr>
+											<td><img src="Images/독전이미지/magazine02.jpg" class="" alt="[주연보다 강렬한 조연] '독전'의 약빤 누님 진서연의 파격 필모" ></td>
+											<td><strong class="tit_join">[주연보다 강렬한 조연] '독전'의 약빤 누님 진서연의 파격 필모</strong><br><br>
+												<p class="txt_magazine">관객의 찬사를 받으며 흥행까지 성공하는 영화에는 최고의 연기를 선보인 배우들의 열연이 있기 마련이다. 조진웅, 류준열 그리고 故 김주혁까지 주연부터 조연까지 강렬한 연기를 선보였기에 캐릭터의 특징이 강조된 &lt;독전&gt;은 성공할 수 있었다. 이중 가장 화제의 중심에 놓인 캐릭터는 김주혁이 연기한 하림의 파트너 보령으로, 시종일관 약에 취한듯한 모습을 보여줘 보는</p></td>
+											</tr>
+										</table>	
+									</a>
+								</div>
+
+								<div>
+									<a href="http://v.movie.daum.net/v/o9Yk1Op848">
+										<table>
+											<tr>
+												<td><img src="Images/독전이미지/magazine03.jpg" class="" alt="[스타그램] '독전' 신스틸러! 괴물 연기력으로 충무로를 흔든 '진서연'" ></td>
+												<td><strong class="tit_join">[스타그램] '독전' 신스틸러! 괴물 연기력으로 충무로를 흔든 '진서연'</strong><br><br>
+													<p class="txt_magazine">(에그테일 에디터: alex) 지난 22일 개봉한 영화 [독전]이 누적 관객 240만 명을 돌파했다. 형사 ‘원호’와 조직원 ‘락’이 마약조직 우두머리를 쫓는 이야기는 빠른 전개와 다채로운 캐릭터로 흥행을 이어가고 있다. 배우 ‘진서연’은 극중 마약 중독자 ‘보령’ 역을 맡아 관객의 시선을 강탈했다. 고등학생 시절 무용으로 입시를 준비했다. 그런데 입시 한</p></td>
+												</tr>
+											</table>	
+										</a>
+									</div>
+
+
+									<div>
+										<a href="http://v.movie.daum.net/v/orODgkctQ0">
+											<table>
+												<tr>
+													<td><img src="Images/독전이미지/magazine04.jpg" class="" alt="[네티즌 리뷰] 화려함으로 중무장한 한국형 범죄 액션 '독전'" ></td>
+													<td><strong class="tit_join">[네티즌 리뷰] 화려함으로 중무장한 한국형 범죄 액션 '독전'</strong><br><br>
+														<p class="txt_magazine">이제까지 볼 수 없던 멋스러움으로 가득한 범죄 영화 [독전]이 개봉했다. [독전]은 예고편 공개 당시부터 압도적인 미장센과 음악으로 많은 화제가 된 작품이다. 거기에 조진웅, 류준열, 김성령, 박해준, 故김주혁 등 충무로를 휘어잡는 초특급 배우들이 영화에 활기를 불어넣어 많은 관객들이 N차 관람을 실천하고 있다고 한다. 영화를 직접 본 에디터와 트위터 네티</p>
+													</tr>
+												</table>	
+											</a>
+										</div>
+
+										<div>
+											<a href="http://v.movie.daum.net/v/oxjx1xhSx8">
+												<table>
+													<tr>
+														<td><img src="Images/독전이미지/magazine05.jpg" class="" alt="주말에 뭐볼까? 5월 22일, 24일 개봉작 별점 및 간단평 모음" ></td>
+														<td><strong class="tit_join">주말에 뭐볼까? 5월 22일, 24일 개봉작 별점 및 간단평 모음</strong><br><br>
+															<p class="txt_magazine">악마를 잡기위해 악마와 함께 지옥으로 들어가다 &lt;독전&gt; [독전,2018] 감독:이해영 출연:조진웅, 류준열, 김주혁, 박해준, 진서연, 차승원 줄거리 의문의 폭발 사고 후, 오랫동안 마약 조직을 추적해온 형사 '원호'(조진웅)의 앞에 조직의 후견인 '오연옥'(김성령)과 버림받은 조직원 '락'(류준열)이 나타난다. 그들의 도움으로 아시아 마약 시장의 거물 '</p>
+														</tr>
+													</table>	
+												</a>
+											</div>
+										</div>
+
+									</section>
+
+
+									<br><br>
+									<section id="content04">
+										<h3>출연/스탭</h3><br>
+
+										<div class="div">		
+
+											<a href="http://movie.daum.net/person/main?personId=34811">	
+												<div id="one2">
+													<img src="Images/독전출연진/01.jpg">
+													<p>이해영</p>
+													<p id="stp"><strong>감독</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=98334">
+												<div id="one2">
+													<img src="Images/독전출연진/02.jpg">
+													<p>조진웅</p>
+													<p id="stp"><strong>원호 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=405308">
+												<div>
+													<img src="Images/독전출연진/03.jpg">
+													<p>류준열</p>
+													<p id="stp"><strong>락 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=6285">
+												<div>
+													<img src="Images/독전출연진/04.jpg">
+													<p>김성령</p>
+													<p id="stp"><strong>연옥 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=303844">
+												<div>
+													<img src="Images/독전출연진/05.jpg">
+													<p>박해준</p>
+													<p id="stp"><strong>선창 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=105866">
+												<div>
+													<img src="Images/독전출연진/06.jpg">
+													<p>남문철</p>
+													<p id="stp"><strong>부장 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=303901">
+												<div>
+													<img src="Images/독전출연진/07.jpg">
+													<p>서현우</p>
+													<p id="stp"><strong>정일 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=136038">
+												<div>
+													<img src="Images/독전출연진/08.jpg">
+													<p>강승현</p>
+													<p id="stp"><strong>소연 역</strong></p>
+												</div>
+											</a>
+										</div>
+
+									</section>
+
+
+								</article>
+
+							</div>
+
+						</body>
+						</html>
