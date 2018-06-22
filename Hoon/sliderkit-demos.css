@@ -1,0 +1,36 @@
+/** 
+ *  sliderkit-demos.css
+ *	> CSS code for demos
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2012 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/*
+ *  PHOTOS SLIDERS
+ *  ------------------------------------------------
+ */
+
+/*---------------------------------
+ *  Photos slider > Minimal
+ *---------------------------------*/
+ /*제일 큰 div*/
+.photoslider-mini{width:1200px;height:500px;} 
+
+/* Panels buttons */
+/*좌우 클릭버튼 사이즈인듯함.*/
+.photoslider-mini .sliderkit-go-btn{position:absolute;top:0;z-index:10;width:50px;height:500px;}
+.photoslider-mini .sliderkit-go-prev{left:0;}
+.photoslider-mini .sliderkit-go-next{right:0;}
+/*좌우 클릭버튼 사이즈*/
+.photoslider-mini .sliderkit-go-btn a{display:block;width:50px;height:500px;opacity:0.6;cursor:pointer;background-color:#fff;background-repeat:no-repeat;background-position:center center;}
+.photoslider-mini .sliderkit-go-prev a{background-image:url("Images/slider-arrow-left.png");}
+.photoslider-mini .sliderkit-go-next a{background-image:url("Images/slider-arrow-right.png");}
+.photoslider-mini .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
+.photoslider-mini .sliderkit-btn-disable a:hover{cursor:default;}
+.photoslider-mini .sliderkit-go-btn span{display:none;}
