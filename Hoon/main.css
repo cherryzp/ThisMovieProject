@@ -19,6 +19,11 @@
 	font-size: 15px;
 }
 
+#poster2_ul li a img{
+	width: 100px;
+	height: 20px;
+}
+
 #strong01{margin-left: 12px;}
 		
 hr{
@@ -92,6 +97,7 @@ a{
 	height: 150px;
 	position: relative;
 	float: left;
+	bottom: 30px;
 }
 #one2{
 	border-top: 2px solid #EEEEEE;
@@ -111,13 +117,119 @@ a{
 	position: absolute;
 	
 }
+#eng{
+	top: 50px;
+	font-size: 16px;
+	color: #000000;
+}
 #stp{
-
+	font-size: 16px;
 	bottom: 20px;
 	color: #989898;
 
 }
 
+.sliderkit a .poto{
+
+	width: 100%;
+	height: 100%;
+}
+.photoslider-mini .sliderkit-panel{
+	width: 100%;
+	height: 100%;
+}
+
+.photoslider-mini{width:100%;} 
 
 
 
+
+
+#main_item{
+    width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#main_item a{
+    font-size: 20px;
+    margin: 0px 50px;
+    color: black;
+}
+
+#main_item a img{
+    height: 20px;
+}
+
+#insert_review{
+    width: 1200px;
+    margin: 30px auto;
+    position: relative;
+}
+
+#insert_review table{
+    margin: 0px auto;
+}
+
+.starRev{
+    display: inline;
+}
+
+.starR{
+    background: url('Images/star/starStar.png') no-repeat right 0;
+    background-size: auto 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.starR.on{background-position:0 0;}
+
+table img{
+    height: 30px;
+}
+
+#star_score{
+    margin-left: 10px;
+    width: 50px;
+    height: 30px;
+}
+
+table td button{
+    width: 100px;
+    height: 155px;
+    background-color: #ed1c24;
+    border:  none;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#review_list{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+#review_list div img{
+    height: 20px;
+    margin: 0px 10px;
+}
+
+#review_list div{
+    margin: 30px 0px;
+}
+
+#review_list div p{
+    margin: 10px 0px;
+}
+
+#list_section a:hover{
+    color: #ed1c24;
+}
+#content05 div{ border-bottom: 2px solid #EEEEEE; }
+#content05 #list_section{border: none;}
+#content05 #review_list{border: none;}
+#main_item{padding-bottom: 30px;}

@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<title>트랜스포터</title>
+
+	<script type="text/javascript" src="main.js"></script>
+
+	<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<!-- Slider Kit scripts -->
+	<script type="text/javascript" src="lib/jquery.sliderkit.1.9.2.pack.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".photoslider-mini").sliderkit({
+				auto:false,
+				autospeed:3000,
+				panelbtnshover:true,
+				circular:true,
+				fastchange:false
+			});
+
+			window.onresize = resizeEvent;
+			resizeEvent();
+		});
+
+		var resizeEvent = function() {
+			if ($(this).width() <= 768) {
+				$("#content03 div#mobile").css("display", "initial");
+				$("#content03 div#desktop").css("display", "none");
+				$("#content05 .mobile").css("display", "initial");
+				$("#content05 .desktop").css("display", "none");
+				
+			}
+			else {
+
+				$("#content03 div#mobile").css("display", "none");
+				$("#content03 div#desktop").css("display","initial");
+				$("#content05 .mobile").css("display", "none");
+				$("#content05 .desktop").css("display","initial");
+				
+			}
+		};
+
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="sliderkit-core.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="sliderkit-demos.css" media="screen, projection" />
+
+	
+	<link rel="stylesheet" type="text/css" href="main.css" media="(min-width:1200px)">	<!-- 최소 1200px 이상일때 (웹)-->
+	<link rel="stylesheet" type="text/css" href="media1200.css" media="(min-width:768px) and (max-width:1200px)"> <!-- 최소 768px 이상일때 (테블릿)-->
+
+	<link rel="stylesheet" type="text/css" href="media768.css" media="(max-width:768px)"> <!--768px 미만일때 (모바일)-->
+
+	<style type="text/css">
+	#wrapper{width:100%;margin: 50px auto};   
+</style>
+
+</head>
+<body>
+
+	<header id="header_01"></header>
+
+	<div id="page">
+
+		<article>
+			<section>
+				<iframe id="movie" title='트랜스포터' width='100%' height='360px' src='http://tv.kakao.com/embed/player/cliplink/38255371?service=flash' allowfullscreen frameborder='0' scrolling='no' ></iframe>
+			</section>
+
+			<section>
+				<img src="Images/Action/01_tran.jpg" id="poster">
+			</section>
+
+			<section id="poster2">
+				<ul id="poster2_ul">
+					<li>트래스포터 (2002)</li>
+					<li>The Transporter</li>
+					<li><a href="#"><img src="Images/star/star_07.png" id="star"></a><strong id="strong01">7.8</strong>/10</li>
+					<li>범죄/액션/스릴러 | 프랑스, 미국</li>
+					<li>2003.01.30 개봉 | 92분, 15세이상관람가</li>
+					<li>(감독)<a href="http://movie.daum.net/person/main?personId=1094"> 원규,</a><a href="http://movie.daum.net/person/main?personId=95780"> 루이스 리터리어</li>
+					<li>(주연)
+						<a href="http://movie.daum.net/person/main?personId=17115">제이슨 스타뎀,</a>
+						<a href="http://movie.daum.net/person/main?personId=1090">서기</a>
+					</li>
+					<li><h3>누적관객(자료 없음)</h3></li>
+				</ul>
+				<hr>
+				
+
+			</section>
+
+			<section id="content01">
+				<p>
+					<strong class="tit_copy">액션의 모든 규칙을 파괴한다!</strong>
+					<br><br>
+					<b>룰(rule)이 깨지기 시작하면서… <br>예상치 못한 사건, 밝혀지는 음모!</b><br><br>
+					과거 특수부대 출신인 프랭크(제이슨 스태덤 분). 현재 그는 범죄조직이 의뢰한 물건을 비밀리에 운반해주는 ‘트랜스포터’ 일을 하고 있다. 비밀스럽고도 위험한 이 일을 하는 그에겐 확고한 룰(rule)이 있는데, ‘첫째, 계약조건을 변경하지 말 것’, ‘둘째, 거래는 익명으로 할 것’, ‘셋째, 절대 포장을 열지 말 것’이다.…<br>
+					<a id="myDIV_Btn" href="javascript:doDisplay();">더보기</a><br>
+					<div id="myDIV" style="display: none">
+
+					<p>
+							그러던 어느 날, 프랭크는 가칭 ‘월 스트리트’(맷 슐츠 분)라는 사람에게서 새로운 거래를 의뢰받는다. 그러나 운반 도중 가방이 움직인다는 사실을 알게 되고, 가방을 열자 그 속에서 물건이 아닌 사람이 발견된다. 프랭크가 자신의 ‘룰’을 깨고 ‘라이’(서기 분)라는 여인을 구해주면서부터 일은 꼬이기 시작하고, 프랭크는 범죄조직으로부터 생명의 위협을 받게 된다. <br><br>한편, 평소 프랭크를 그의 주위를 살피던 형사 타르코니(프랑수아 베를레앙 분). 그는 프랭크의 자동차가 폭발사고의 현장에서 발견되고, 얼마 지나지 않아 프랭크의 집 전체가 정체 모를 일당에 의해 폭파되면서 프랭크를 더욱 의심하게 된다. <br><br>라이를 구해준 프랭크는 그녀에게서 놀라운 사실을 듣게 된다. 월 스트리트 일당이 그녀의 가족이 포함된 수백명의 중국인 밀입국자들을 암거래하려 한다는 것. 프랭크는 혼자서 이들을 구출하려는 그녀를 돕기로 한다. 거대 범죄조직이 그들을 뒤쫓고, 프랭크를 의심하는 경찰의 포위망까지 좁혀지면서 상황은 더욱 예상치 못한 곳으로 치닫는다. 그리고 계속되는 위험 속에서 프랭크는 그녀에게 뭔가 다른 비밀이 숨겨졌음을 감지하는데…<br><br>
+						</p>
+					</p>
+				</div>
+
+			</section>
+
+			<section id="content02">
+				
+				<div id="wrapper">
+					<div class="sliderkit photoslider-mini">
+						<div class="sliderkit-panels">
+							<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a href="#" title="Previous"><span>Previous</span></a></div>
+							<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a href="#" title="Next"><span>Next</span></a></div>
+
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/01.jpg" alt="포토이미지1"/></a>
+								<p class="txt_related">포토(<em><span>1</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/02.jpg" alt="포토이미지2"/></a>
+								<p class="txt_related">포토(<em><span>2</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/03.jpg" alt="포토이미지3"/></a>
+								<p class="txt_related">포토(<em><span>3</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/04.jpg" alt="포토이미지4"/></a>
+								<p class="txt_related">포토(<em><span>4</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/05.jpg" alt="포토이미지5"/></a>
+								<p class="txt_related">포토(<em><span>5</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/06.jpg" alt="포토이미지6" /></a>
+								<p class="txt_related">포토(<em><span>6</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/07.jpg" alt="포토이미지7"/></a>
+								<p class="txt_related">포토(<em><span>7</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/08.jpg" alt="포토이미지8"/></a>
+								<p class="txt_related">포토(<em><span>8</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/09.jpg" alt="포토이미지9"/></a>
+								<p class="txt_related">포토(<em><span>9</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							<div class="sliderkit-panel">
+								<a href="#"><img class="poto" src="Images/트랜스포터이미지/10.jpg" alt="포토이미지10"/></a>
+								<p class="txt_related">포토(<em><span>10</span></em>/<span id="photoTotalSize">10</span>)</p>
+								<p class="txt">트랜스포터</p>
+								<a class="textA" href="http://movie.daum.net/moviedb/photoviewer?id=4202#10032/PhotoList">모두보기 ></a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			
+
+
+									<br><br>
+									<section id="content04">
+										<h3>출연/스탭</h3><br>
+
+										<div class="div">		
+
+											<a href="http://movie.daum.net/person/main?personId=1094">	
+												<div id="one2">
+													<img src="Images/트랜스포터출연진/01.jpg">
+													<p>원규</p>
+													<p id="eng">Corey Yuen</p>
+													<p id="stp"><strong>감독</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=95780">
+												<div id="one2">
+													<img src="Images/트랜스포터출연진/02.jpg">
+													<p>루이스 리터리어</p>
+													<p id="eng">Louis Leterrier</p>
+													<p id="stp"><strong>감독</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=17115">
+												<div>
+													<img src="Images/트랜스포터출연진/03.jpg">
+													<p>제이슨 스타뎀</p>
+													<p id="eng">Jason Statham</p>
+													<p id="stp"><strong>프랭크 마틴 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=1090">
+												<div>
+													<img src="Images/트랜스포터출연진/04.jpg">
+													<p>서기</p>
+													<p id="eng">Shu Qi</p>
+													<p id="stp"><strong>라이 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=9299">
+												<div>
+													<img src="Images/트랜스포터출연진/05.jpg">
+													<p>맷 슐츠</p>
+													<p id="eng">Matt Schulze</p>
+													<p id="stp"><strong>월스트리트 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=20008">
+												<div>
+													<img src="Images/트랜스포터출연진/06.jpg">
+													<p>프랑수아 베를레앙</p>
+													<p id="eng">Francois Berleand</p>
+													<p id="stp"><strong>타르코니 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=8792">
+												<div>
+													<img src="Images/트랜스포터출연진/07.jpg">
+													<p>릭 영</p>
+													<p id="eng">Ric Young</p>
+													<p id="stp"><strong>미스터 콰이 역</strong></p>
+												</div>
+											</a>
+
+											<a href="http://movie.daum.net/person/main?personId=7723">
+												<div>
+													<img src="Images/트랜스포터출연진/08.jpg">
+													<p>더그 랜드</p>
+													<p id="eng">Doug Rand</p>
+													<p id="stp"><strong>리더 역</strong></p>
+												</div>
+											</a>
+										</div>
+
+									</section>
+
+									<section id="content05" class="desktop">
+									<div class="desktop">
+										<div id="main_item"> 
+										<a href="#">네티즌(65)<img src="Images/star/star_08.png">8.1</a>
+										<a href="#">전문가(17)<img src="Images/star/star_06.png">6.4</a>
+									</div>
+
+									<div id="review_list">        
+										<div>
+											<p><strong>주릴라</strong><img src="Images/star/star_09.png"><strong>9</strong>/10</p>
+											<p>내가 지금까지 본것중 가장 액션 쩌는 영화</p>
+											<p>2018.06.06 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>이상훈</strong><img src="Images/star/star_10.png"><strong>10</strong>/10</p>
+											<p>트랜스포터1 최근에 제대로 다시 한번 봤는디... 역시 제이슨 스타뎀다운 화끈한 액션 말이 필요 있겠습니까.? ㅋㅋㅋ</p>
+											<p>2018.06.05 19:25<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>첼시</strong><img src="Images/star/star_08.png"><strong>8</strong>/0</p>
+											<p>
+											제이슨 스타뎀이란 배우를 처음으로 알게해준 영화.<br> 
+											너무나 비슷한 역할을 많이한 탓에 이제는 그의 영화에 대한 관심도가 덜해졌지만<br> 
+											이 땐 시원한 그이 액션에 온 몸이 짜릿할 정도였다.</p>
+											<p>2018.06.05 18:34<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>레니토이</strong><img src="Images/star/star_04.png"><strong>4</strong>/10</p>
+											<p>전혀 스타일리쉬하지 않는 무미건조한 총질에 염증이 난다.</p>
+											<p>2018.06.04 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>까망</strong><img src="Images/star/star_10.png"><strong>10</strong>/10</p>
+											<p>하...그냥 내가 제이슨 스타뎀이란 배우를 발견하게된 영화이기도하고<br>
+											거기에 화끈한 액션까지 볼수있기에 10점 누르고감!</p>
+											<p>2018.06.03 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>태연</strong><img src="Images/star/star_09.png"><strong>9</strong>/10</p>
+											<p>보고또봐도 질리지가않네</p>
+											<p>2018.06.02 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>장혁</strong><img src="Images/star/star_05.png"><strong>5</strong>/10</p>
+											<p>재밋네</p>
+											<p>2018.06.01 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>gre04</strong><img src="Images/star/star_08.png"><strong>8</strong>/10</p>
+											<p>내가 본 제이슨 스타뎀 영화중최고 개쩔었던 영화다화끈했던 액션 쥑이네 재미있게 잘 즐겨 봤다</p>
+											<p>2018.06.01 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>ho0303</strong><img src="Images/star/star_09.png"><strong>9</strong>/10</p>
+											<p>션션한 액션이 끝내줬음</p>
+											<p>2018.06.01 11:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>빈의자</strong><img src="Images/star/star_06.png"><strong>3</strong>/10</p>
+											<p>
+											액션의 새 평을 열었던 한 장' 지금 다시 보면 좀 우스운 감도 있지만 하나의 장르'를 열었을 듯</p>
+											<p>2018.06.06 10:18<a href="#">신고하기</a></p>
+										</div>
+										
+									</div>
+									<div id="list_section">
+										<a href="#">1</a>
+										<a href="#">2</a>
+										<a href="#">3</a>
+										<a href="#">4</a>
+										<a href="#">5</a>
+										<a href="#">></a>
+									</div>
+
+									</div>
+
+									<div class="mobile">
+										
+										<div id="main_item"> 
+											<div id="main_item" class="mobile" style="border-bottom: none;"> 
+												<a href="#">네티즌(65)<img src="Images/star/star_08.png">8.1</a><br>
+												<a href="#">전문가(17)<img src="Images/star/star_06.png">6.4</a>
+											</div>
+										</div>
+
+										<div id="review_list">        
+										<div>
+											<p><strong>주릴라</strong><img src="Images/star/star_09.png"><strong>9</strong>/10</p>
+											<p>내가 지금까지 본것중 가장 액션 쩌는 영화</p>
+											<p>2018.06.06 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>이상훈</strong><img src="Images/star/star_10.png"><strong>10</strong>/10</p>
+											<p>트랜스포터1 최근에 제대로 다시 한번 봤는디... 역시 제이슨 스타뎀다운 화끈한 액션 말이 필요 있겠습니까.? ㅋㅋㅋ</p>
+											<p>2018.06.05 19:25<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>첼시</strong><img src="Images/star/star_08.png"><strong>8</strong>/0</p>
+											<p>
+											제이슨 스타뎀이란 배우를 처음으로 알게해준 영화.<br> 
+											너무나 비슷한 역할을 많이한 탓에 이제는 그의 영화에 대한 관심도가 덜해졌지만<br> 
+											이 땐 시원한 그이 액션에 온 몸이 짜릿할 정도였다.</p>
+											<p>2018.06.05 18:34<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>레니토이</strong><img src="Images/star/star_04.png"><strong>4</strong>/10</p>
+											<p>전혀 스타일리쉬하지 않는 무미건조한 총질에 염증이 난다.</p>
+											<p>2018.06.04 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>까망</strong><img src="Images/star/star_10.png"><strong>10</strong>/10</p>
+											<p>하...그냥 내가 제이슨 스타뎀이란 배우를 발견하게된 영화이기도하고<br>
+											거기에 화끈한 액션까지 볼수있기에 10점 누르고감!</p>
+											<p>2018.06.03 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>태연</strong><img src="Images/star/star_09.png"><strong>9</strong>/10</p>
+											<p>보고또봐도 질리지가않네</p>
+											<p>2018.06.02 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>장혁</strong><img src="Images/star/star_05.png"><strong>5</strong>/10</p>
+											<p>재밋네</p>
+											<p>2018.06.01 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>gre04</strong><img src="Images/star/star_08.png"><strong>8</strong>/10</p>
+											<p>내가 본 제이슨 스타뎀 영화중최고 개쩔었던 영화다화끈했던 액션 쥑이네 재미있게 잘 즐겨 봤다</p>
+											<p>2018.06.01 12:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>ho0303</strong><img src="Images/star/star_09.png"><strong>9</strong>/10</p>
+											<p>션션한 액션이 끝내줬음</p>
+											<p>2018.06.01 11:18<a href="#">신고하기</a></p>
+										</div>
+										
+										<div>
+											<p><strong>빈의자</strong><img src="Images/star/star_06.png"><strong>3</strong>/10</p>
+											<p>
+											액션의 새 평을 열었던 한 장' 지금 다시 보면 좀 우스운 감도 있지만 하나의 장르'를 열었을 듯</p>
+											<p>2018.06.06 10:18<a href="#">신고하기</a></p>
+										</div>
+										
+									</div>
+								
+									</div>
+									
+								</section>
+
+								</article>
+
+							</div>
+
+						</body>
+						</html>
